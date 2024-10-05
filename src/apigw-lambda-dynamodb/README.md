@@ -10,3 +10,5 @@
 
 * https://oji-cloud.net/2022/04/15/post-7028/
 * https://oji-cloud.net/2022/02/19/post-6926/
+* https://zenn.dev/coconala/articles/7a49fee9893c95
+* https://techblog.forgevision.com/entry/Terraform/directory
