@@ -1,4 +1,4 @@
-variable "prefix" {
+variable "name_prefix" {
   type = string
 }
 
@@ -7,7 +7,7 @@ variable "user_table-arn" {
 }
 
 resource "aws_iam_role" "lambda-dynamodb-role" {
-  name = "${var.prefix}-lambda-dynamo-role"
+  name = "${var.name_prefix}-lambda-dynamo-role"
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
     Statement = [
@@ -29,7 +29,7 @@ resource "aws_iam_role_policy_attachment" "lambda-dynamodb-role-policy-attach" {
 }
 
 resource "aws_iam_role_policy" "dynamodb-read-policy" {
-  name = "${var.prefix}-dynamodb-read-policy"
+  name = "${var.name_prefix}-dynamodb-read-policy"
   role = aws_iam_role.lambda-dynamodb-role.id
   policy = jsonencode({
     Version = "2012-10-17"

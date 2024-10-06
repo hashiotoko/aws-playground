@@ -1,9 +1,9 @@
-variable "prefix" {
+variable "name_prefix" {
   type = string
 }
 
 resource "aws_dynamodb_table" "user" {
-  name = "${var.prefix}_user"
+  name = "${var.name_prefix}_user"
   billing_mode = "PAY_PER_REQUEST"
   hash_key = "UserId"
   attribute {
