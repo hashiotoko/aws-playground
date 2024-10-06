@@ -47,6 +47,6 @@ resource "aws_iam_role_policy" "dynamodb-read-policy" {
   })
 }
 
-output "tr_lambda_role-arn" {
+output "lambda_role-arn" {
   value = aws_iam_role.lambda-dynamodb-role.arn
 }
