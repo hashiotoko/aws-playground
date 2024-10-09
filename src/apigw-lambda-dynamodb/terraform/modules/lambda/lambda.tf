@@ -14,6 +14,10 @@ variable "lambda_dynamodb_role-arn" {
   type = string
 }
 
+variable "api-execution-arn" {
+  type = string
+}
+
 data "archive_file" "lambda_layer" {
   type = "zip"
   source_dir = "./dist/lambda_layer"
@@ -49,6 +53,14 @@ resource "aws_lambda_function" "lambda" {
       PRIMARY_KEY = var.user_table-hash_key
     }
   }
+}
+
+resource "aws_lambda_permission" "lambda_permission" {
+  statement_id  = "AllowAPIGatewayGetApi"
+  action = "lambda:InvokeFunction"
+  function_name = aws_lambda_function.lambda.arn
+  principal = "apigateway.amazonaws.com"
+  source_arn = "${var.api-execution-arn}/*"
 }
 
 output "lambda-invoke-arn" {

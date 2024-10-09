@@ -15,4 +15,11 @@ module "lambda" {
   user_table-name = module.dynamodb.user_table.name
   user_table-hash_key = module.dynamodb.user_table.hash_key
   lambda_dynamodb_role-arn = module.iam.lambda_role-arn
+  api-execution-arn = module.api_gateway.api-execution-role
+}
+
+module "api_gateway" {
+  source = "./modules/api-gateway"
+  name_prefix = "test"
+  lambda-invoke-arn = module.lambda.lambda-invoke-arn
 }
