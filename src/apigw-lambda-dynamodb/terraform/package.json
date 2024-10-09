@@ -7,6 +7,9 @@
     "build:lambda": "npm-run-all build:lambda:*",
     "build:lambda:func": "tsc",
     "build:lambda:layer": "sh build_lambda_layer.sh",
+    "diff": "terraform plan",
+    "deploy": "terraform apply",
+    "destroy": "terraform destroy",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {

@@ -8,6 +8,8 @@
 * https://qiita.com/yamapyblack/items/c037c4e07123929d9046
 * https://zenn.dev/tkg216/articles/c9aede81c20a8e
 * https://zenn.dev/kyuko/articles/69d612bf8ad201
+* https://developer.hashicorp.com/terraform/language/expressions/types
+* https://qiita.com/Hikosaburou/items/1d3765d85d5398e3763f#tfvars-%E3%81%AB%E5%80%A4%E3%82%92%E5%9F%8B%E3%82%81%E8%BE%BC%E3%82%80
 
 ## terraform ref
 

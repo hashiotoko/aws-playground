@@ -22,4 +22,5 @@ module "api_gateway" {
   source = "./modules/api-gateway"
   name_prefix = "test"
   lambda-invoke-arn = module.lambda.lambda-invoke-arn
+  allow-ips = var.api-allow-ips
 }
