@@ -1,8 +1,10 @@
 **/node_modules
+**/yarn-error.log
 **/.env
 **/dist
 **/output
 
+#### terraform ####
 # Local .terraform directories
 **/.terraform
 

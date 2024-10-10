@@ -19,3 +19,15 @@
 * https://techblog.forgevision.com/entry/Terraform/directory
 * https://www.cloudbuilders.jp/articles/4659/
 * https://envader.plus/article/474
+
+## cdktf
+
+* https://developer.hashicorp.com/terraform/tutorials/cdktf/cdktf-install
+* https://dev.classmethod.jp/articles/ckd_for_terraform_first_touch/
+* https://zenn.dev/yutaro1985/articles/cdktf-for-usual-terraform-users
+
+## その他
+
+* https://speakerdeck.com/yayoi_dd/i-tried-using-cdk-for-terraform
+* https://dev.classmethod.jp/articles/cdk-for-terraform-aws-adapter-aws-cdk-construct/
+  * 現状、cdktf では L1 Coonstruct レベルのものしか指定できないが、[AWS Adapter(technical preview)](https://developer.hashicorp.com/terraform/cdktf/create-and-deploy/aws-adapter) を使用することで AWS Cloud Control API 経由で L2 L3 Construct などを使用できる

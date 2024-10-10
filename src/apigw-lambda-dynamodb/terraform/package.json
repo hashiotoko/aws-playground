@@ -1,5 +1,5 @@
 {
-  "name": "apigw-lambda-dynamodb",
+  "name": "apigw-lambda-dynamodb-terraform",
   "version": "0.0.0",
   "main": "index.js",
   "private": true,
