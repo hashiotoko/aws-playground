@@ -10,6 +10,7 @@
     "diff": "terraform plan",
     "deploy": "terraform apply",
     "destroy": "terraform destroy",
+    "format": "terraform fmt -recursive",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {

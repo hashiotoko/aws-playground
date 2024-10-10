@@ -1,4 +1,4 @@
 variable "api-allow-ips" {
-  type = set(string)
+  type      = set(string)
   sensitive = true
 }

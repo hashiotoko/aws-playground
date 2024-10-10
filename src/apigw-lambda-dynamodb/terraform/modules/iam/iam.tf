@@ -14,7 +14,7 @@ resource "aws_iam_role" "lambda-dynamodb-role" {
       {
         Action = "sts:AssumeRole"
         Effect = "Allow"
-        Sid = ""
+        Sid    = ""
         Principal = {
           Service = "lambda.amazonaws.com"
         }
@@ -24,7 +24,7 @@ resource "aws_iam_role" "lambda-dynamodb-role" {
 }
 
 resource "aws_iam_role_policy_attachment" "lambda-dynamodb-role-policy-attach" {
-  role = aws_iam_role.lambda-dynamodb-role.name
+  role       = aws_iam_role.lambda-dynamodb-role.name
   policy_arn = "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
 }
 
